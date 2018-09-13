@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.IO;
 using System.Web;
 using Microsoft.WindowsAzure.Storage;
@@ -20,7 +21,7 @@ namespace FaceGraphTask.Infrastructure.Service
             try
             {
                 // Get azure table storage connection string.  
-                var connectionString = "Your Azure Storage Connection String goes here";
+                var connectionString = ConfigurationManager.AppSettings["storageConnectionString"];
                 var storageAccount = CloudStorageAccount.Parse(connectionString);
 
                 var cloudBlobClient = storageAccount.CreateCloudBlobClient();
@@ -43,7 +44,7 @@ namespace FaceGraphTask.Infrastructure.Service
             }
         }
 
-        public string UploadFile(HttpPostedFileBase fileToUpload)
+        public string UploadFile(HttpPostedFile fileToUpload)
         {
             // Check HttpPostedFileBase is null or not  
             if (fileToUpload == null || fileToUpload.ContentLength == 0)

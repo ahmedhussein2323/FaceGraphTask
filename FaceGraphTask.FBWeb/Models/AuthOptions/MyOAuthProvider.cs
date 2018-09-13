@@ -18,11 +18,9 @@ namespace FaceGraphTask.FBWeb.Models.AuthOptions
             var id = context.OwinContext.Get<Guid>("otc:id");
             var email = context.OwinContext.Get<string>("otc:email");
 
-            var currUser = new DocumentDbRepository<User>("User").GetItemAsync(id, "");
-
             identity.AddClaim(new Claim(ClaimTypes.Email, email));
             identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, id.ToString()));
-            identity.AddClaim(new Claim(ClaimTypes.Role, currUser.Role));
+            //identity.AddClaim(new Claim(ClaimTypes.Role, currUser.Role));
             context.Validated(identity);
             return Task.FromResult(0);
         }

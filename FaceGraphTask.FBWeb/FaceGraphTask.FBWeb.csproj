@@ -210,6 +210,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\BaseApiController.cs" />
+    <Compile Include="Api\ImageController.cs" />
     <Compile Include="Api\UserController.cs" />
     <Compile Include="App_Start\App.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -233,35 +234,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Front-App\FaceGraphTask-Front\.gitignore" />
-    <Content Include="Front-App\FaceGraphTask-Front\e2e\protractor.conf.js" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\app\app.component.css" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\app\app.component.html" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\app\list-user\list-user.component.css" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\app\list-user\list-user.component.html" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\app\login\login.component.css" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\app\login\login.component.html" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\favicon.ico" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\index.html" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\karma.conf.js" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\styles.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Front-App\FaceGraphTask-Front\.editorconfig" />
-    <Content Include="Front-App\FaceGraphTask-Front\angular.json" />
-    <Content Include="Front-App\FaceGraphTask-Front\e2e\tsconfig.e2e.json" />
-    <Content Include="Front-App\FaceGraphTask-Front\package-lock.json" />
-    <Content Include="Front-App\FaceGraphTask-Front\package.json" />
-    <Content Include="Front-App\FaceGraphTask-Front\README.md" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\assets\.gitkeep" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\browserslist" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\tsconfig.app.json" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\tsconfig.spec.json" />
-    <Content Include="Front-App\FaceGraphTask-Front\src\tslint.json" />
-    <Content Include="Front-App\FaceGraphTask-Front\tsconfig.json" />
-    <Content Include="Front-App\FaceGraphTask-Front\tslint.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -309,26 +285,6 @@
       <Project>{F19384B4-BBB1-40B7-AA38-A8C1503A503A}</Project>
       <Name>FaceGraphTask.Infrastructure</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\e2e\src\app.e2e-spec.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\e2e\src\app.po.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\app\app.component.spec.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\app\app.component.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\app\app.module.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\app\app.routing.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\app\list-user\list-user.component.spec.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\app\list-user\list-user.component.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\app\login\login.component.spec.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\app\login\login.component.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\app\model\user.model.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\app\service\auth.service.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\app\service\user.service.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\environments\environment.prod.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\environments\environment.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\main.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\polyfills.ts" />
-    <TypeScriptCompile Include="Front-App\FaceGraphTask-Front\src\test.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

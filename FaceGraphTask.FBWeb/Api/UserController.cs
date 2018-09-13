@@ -26,7 +26,7 @@ namespace FaceGraphTask.FBWeb.Api
             try
             {
                 var check = CommandService.UnitOfWork.UserRepository.Get(e => e.Email == model.Email);
-                if (check != null && check.Count() > 0)
+                if (check != null && check.Any())
                     return Request.CreateResponse(HttpStatusCode.BadRequest, "Email Exist");
                 var vs = CommandService.Executer.Execute(new AddUser
                 {
@@ -48,7 +48,6 @@ namespace FaceGraphTask.FBWeb.Api
         }
 
         [HttpGet]
-        [AllowAnonymous]
         public HttpResponseMessage GetUserList()
         {
             try
